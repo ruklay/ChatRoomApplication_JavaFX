@@ -1,0 +1,17 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.textFlow {
+	-fx-background-color: #FFFFFF;
+}
+
+.textSystemMessage {
+	-fx-background-color: red;
+}
+
+.textBroadcastMessage {
+	-fx-background-color: green;
+}
+
+.textPrivateMessage {
+	-fx-background-color: blue;
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserController">
+   <children>
+      <TableView fx:id="tblUser" layoutX="30.0" layoutY="29.0" prefHeight="343.0" prefWidth="277.0">
+        <columns>
+          <TableColumn fx:id="tblColUserName" prefWidth="134.0" text="User Name" />
+          <TableColumn fx:id="tblColPassword" prefWidth="142.0" text="Password" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAddUser" layoutX="408.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleButtonActionAdd" text="Add User" />
+      <Button fx:id="btnRemoveUser" layoutX="325.0" layoutY="347.0" mnemonicParsing="false" onAction="#handleButtonActionRemove" text="Remove Selected User" />
+      <TextField fx:id="txtUserName" layoutX="408.0" layoutY="121.0" />
+      <TextField fx:id="txtPassword" layoutX="408.0" layoutY="160.0" />
+      <Label layoutX="333.0" layoutY="125.0" text="User Name :" />
+      <Label layoutX="333.0" layoutY="164.0" text="Password" />
+      <Button fx:id="btnBackServer" layoutX="482.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleButtonActionBackServer" text="Back to Server" />
+      <Label layoutX="408.0" layoutY="85.0" text="New User" />
+      <Label fx:id="txtMessage" layoutX="408.0" layoutY="252.0" text="Message" />
+   </children>
+</Pane>
